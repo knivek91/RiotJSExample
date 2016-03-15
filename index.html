@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>RiotJS</title>
+	<link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+</head>
+<body>
+	
+	<div class="container">
+		<!-- <div class="col-sm-3">
+			<h2>Pass Simple Parameter:</h2>
+			<example1></example1>
+			<hr />
+		</div>
+		
+		<div class="col-sm-3">
+			<h2>Use Tag into other Tag:</h2>
+			<example2></example2>
+			<hr />
+		</div>
+		
+		<div class="col-sm-3">
+			<h2>Using Each to repeat tags:</h2>
+			<example3></example3>
+			<hr />
+		</div> -->
+
+
+		<div class="col-sm-12">
+			<example4></example4>
+			<user-table></user-table>
+		</div>
+
+	</div>
+	
+	
+	
+	<!-- <script src="js/tags.tag" type="riot/tag"></script> -->
+	<script src="js/table-tag.tag" type="riot/tag"></script>
+	<script src="js/user-table.tag" type="riot/tag"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.3.13/riot+compiler.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script>
+		
+/*		riot.mount('example1', {doing:'What Are you doing?'});
+		riot.mount('example2');
+		riot.mount('example3');
+*/
+		// create table
+		var tableHeaders = ['Name', 'Age', 'Action'];
+		var people = 	[ 
+				 {id: 1, name: 'Kevin Rojas',   age:24, address:'Puntareas'}
+				,{id: 2, name: 'Cindy Rojas',   age:15, address:'San Rafael Abajo'}
+				,{id: 3, name: 'Sergio Rivera', age:22, address:'Naranjo'}
+				,{id: 4, name: 'Carlos Mendez', age:27, address:'Cartago'} ];
+
+		riot.mount('example4', {title: 'Riot Example',tableHeaders: tableHeaders, people: people});
+		/*riot.mount('user-table', {tableHeader: tableHeaders, lstUsers: people});*/
+		
+	</script>
+</body>
+</html>

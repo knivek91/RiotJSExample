@@ -1,0 +1,9 @@
+{
+	"Nerds": [
+			{ "id":1, name:"Nicola Tesla", dieAt:86 }
+		, 	{ "id":2, name:"Albert Einstein", dieAt:76 }
+		, 	{ "id":3, name:"Friedrich Wilhelm Nietzsche", dieAt:55 }
+		, 	{ "id":4, name:"Jean-Paul Charles Aymard Sartre", dieAt:74 }
+		, 	{ "id":5, name:"Sigmund Freud", dieAt:83 }
+	]
+}

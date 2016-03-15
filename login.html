@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Data from Server</title>
+	<link rel="stylesheet" href="https://bootswatch.com/lumen/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+</head>
+<body>
+	
+
+	<div class="container">
+		<login-tag></login-tag>
+	</div>
+	
+	<script src="js/user-table.tag" type="riot/tag"></script>
+	<script src="js/login-tag.tag" type="riot/tag"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/riot/2.3.13/riot+compiler.min.js"></script>
+	<script async src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+	<script>
+		
+		$(document).ready(function() {
+			riot.mount('login-tag', { hasError:false });
+		});
+		
+	</script>
+</body>
+</html>
